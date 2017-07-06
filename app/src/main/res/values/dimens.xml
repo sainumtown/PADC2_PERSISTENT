@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_normal">8dp</dimen>
+    <dimen name="shop_image_width">60dp</dimen>
+    <dimen name="shop_image_height">60dp</dimen>
+    <dimen name="margin_normal">8dp</dimen>
+    <dimen name="font_size_title">18sp</dimen>
+    <dimen name="padding_normalx2">16dp</dimen>
+    <dimen name="margin_normalx2">16dp</dimen>
+    <dimen name="font_size_12">12sp</dimen>
+</resources>

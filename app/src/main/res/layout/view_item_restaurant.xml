@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_separator"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/padding_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:background="#dcdcdc">
+
+    </View>
+
+    <ImageView
+        android:id="@+id/iv_advertisment"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/v_separator"
+        android:background="@drawable/advertisment" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/v_separator"
+        android:layout_marginTop="@dimen/margin_normal">
+
+        <ImageView
+            android:id="@+id/iv_thumbnail"
+            android:layout_width="@dimen/shop_image_width"
+            android:layout_height="@dimen/shop_image_height"
+            android:layout_marginLeft="@dimen/padding_normal"
+            android:background="@drawable/image_border"
+            android:scaleType="fitXY"
+            android:src="@drawable/myanmar_attractions_logo" />
+
+
+        <RatingBar
+            android:id="@+id/rb_Restaurant"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/padding_normalx2"
+            android:layout_toRightOf="@id/iv_thumbnail"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="3.5" />
+
+        <TextView
+            android:id="@+id/tv_rating_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_normal"
+            android:layout_toRightOf="@id/rb_Restaurant"
+            android:text="( 20 )"
+            android:textColor="@color/lightGray"
+            android:textSize="@dimen/font_size_12" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb_Restaurant"
+            android:layout_marginLeft="@dimen/padding_normalx2"
+            android:layout_toRightOf="@id/iv_thumbnail"
+            android:fontFamily="sans-serif-condensed"
+            android:singleLine="true"
+            android:text="title"
+            android:textColor="@color/colorDark"
+            android:textSize="@dimen/font_size_title" />
+
+        <TextView
+            android:id="@+id/tv_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginLeft="@dimen/padding_normalx2"
+            android:layout_toRightOf="@id/iv_thumbnail"
+            android:text="genre"
+            android:textColor="@color/lightGray" />
+
+
+        <TextView
+            android:id="@+id/tv_deliver_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_tags"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:text="12 min"
+            android:textColor="@color/lightGray"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_deliver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_tags"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_toLeftOf="@id/tv_deliver_time"
+            android:text="@string/deliver_in"
+            android:textColor="@color/lightGray" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
